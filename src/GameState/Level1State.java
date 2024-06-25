@@ -108,7 +108,6 @@ public class Level1State extends GameState {
 			}
 		}
 		;
-		System.out.println(player.gety() + " " + tileMap.getHeight());
 		if (player.gety() >= tileMap.getHeight() - 12) {
 			player.setDead();
 		}
