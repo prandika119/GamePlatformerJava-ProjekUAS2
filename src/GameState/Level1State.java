@@ -107,16 +107,23 @@ public class Level1State extends GameState {
 				i--;
 			}
 		}
-		;
+
+		// if player falls off the map, player dies
 		if (player.gety() >= tileMap.getHeight() - 12) {
 			player.setDead();
 		}
-		;
+
+		// player dead game over
 		if (player.isDead()) {
 			bgMusic.stop();
 			gsm.setState(GameStateManager.GAMEOVERSTATE);
 		}
-		;
+
+		// player finish
+		if (player.getx() > 2900) {
+			bgMusic.stop();
+			gsm.setState(GameStateManager.FINISHSTATE);
+		}
 
 	}
 
