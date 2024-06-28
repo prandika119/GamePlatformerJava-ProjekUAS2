@@ -45,7 +45,7 @@ public class FinishState extends GameState {
         // draw title
         g.setColor(titleColor);
         g.setFont(titleFont);
-        g.drawString("Selamat Finish", 80, 70);
+        g.drawString("You Win", 80, 70);
 
         // draw menu options
         g.setFont(font);

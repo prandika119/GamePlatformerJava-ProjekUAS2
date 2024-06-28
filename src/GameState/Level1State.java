@@ -56,7 +56,6 @@ public class Level1State extends GameState {
 	private void populateEnemies() {
 
 		enemies = new ArrayList<Enemy>();
-
 		Slugger s;
 		Point[] points = new Point[] {
 				new Point(200, 100),
@@ -74,7 +73,6 @@ public class Level1State extends GameState {
 	}
 
 	public void update() {
-
 		// update player
 		player.update();
 		tileMap.setPosition(
